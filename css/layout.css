@@ -1,5 +1,6 @@
 body {
   background-color: black;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -18,8 +19,8 @@ a {
 hr {
   /*margin: 0;*/
   margin: auto;
-  color: grey;
   width: 100%;
+  border-color: white;
 }
 /* END GENERAL */
 
@@ -33,7 +34,6 @@ nav {
   margin: auto;
   text-align: center;
 }
-
 
 nav ul {
   padding: 0;
@@ -59,17 +59,24 @@ li.active a{
   color: white;
 }
 
-.title h1, .title h2 {
-  text-transform: uppercase;
+.title
+{
   text-align: center;
+  text-transform: uppercase;
 }
 
 .title h1 {
-  color: white;
+  font-size: 3em;
+  font-family: 'Open Sans';
+  font-weight: lighter;
+  color: #fff;
 }
 
 .title h2 {
-  color: grey;
+  font-size: 1.2em;
+  font-family: 'Open Sans';
+  font-weight: lighter;
+  color: #9c9c9c;
 }
 
 /* END HEADER */
@@ -96,25 +103,30 @@ footer h2 {
 }
 
 .about, .line, .post {
+  /*border: 1px solid green;*/
   display: inline-block;
-  width: 32.7%;
-  border: 1px solid green;
+  width: 30%;
   color: white;
   text-align: left;
   vertical-align: top;
   margin: 0;
   margin-bottom: 20px;
-  height: 350px;
+  padding-right: 20px;
+  height: 300px;
 }
 
+.about p {
+  font-size: 0.8em;
+}
 .line {
   background: url(../images/album-03-300x300.jpg) no-repeat left bottom;
-  background-size: 260px 260px;
+  background-size: 240px 240px;
 }
 
 .social-network {
   height: 50px;
 }
+
 .social-network li {
   padding: 15;
   display: inline-block;
