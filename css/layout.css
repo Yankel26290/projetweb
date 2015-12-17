@@ -1,0 +1,56 @@
+body {
+  background-color: black;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+.container {
+  background: url(../images/background.jpg) no-repeat 0 0 transparent;
+  margin: auto;
+  max-width: 1024px;
+}
+
+nav {
+  margin: auto;
+  border: 1px solid green;
+  text-align: center;
+}
+
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+
+.navigation li {
+  display: inline-block;
+  padding: 100px 35px;
+  text-transform: uppercase;
+}
+
+.navigation a {
+  color: #9c9c9c;
+}
+
+.navigation a:hover {
+  color: white;
+}
+
+
+
+.social-network li {
+  padding: 15;
+  display: inline-block;
+}
+.fa {
+  color: white;
+}
