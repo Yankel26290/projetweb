@@ -7,18 +7,30 @@ a {
   text-decoration: none;
 }
 
-
-
+/* GENERAL */
 
 .container {
-  background: url(../images/background.jpg) no-repeat 0 0 transparent;
+  background: url(../images/background.jpg) no-repeat 0 0;
   margin: auto;
   max-width: 1024px;
 }
 
+hr {
+  /*margin: 0;*/
+  margin: auto;
+  color: grey;
+  width: 100%;
+}
+/* END GENERAL */
+
+/* HEADER */
+
+.header {
+  border: 1px solid green;
+}
+
 nav {
   margin: auto;
-  border: 1px solid green;
   text-align: center;
 }
 
@@ -29,7 +41,9 @@ nav ul {
   list-style: none;
 }
 
-
+li.active a{
+  color: white;
+}
 
 .navigation li {
   display: inline-block;
@@ -45,12 +59,73 @@ nav ul {
   color: white;
 }
 
+.title h1, .title h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
 
+.title h1 {
+  color: white;
+}
 
+.title h2 {
+  color: grey;
+}
+
+/* END HEADER */
+
+/* CONTENT */
+.content {
+  border: 1px solid green;
+  height: 100px;
+}
+/* END CONTENT */
+
+/* FOOTER */
+
+footer {
+  /*border: 1px solid green;*/
+  text-align: center;
+  width: 800px;
+  margin: auto;
+}
+
+footer h2 {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.about, .line, .post {
+  display: inline-block;
+  width: 32.7%;
+  border: 1px solid green;
+  color: white;
+  text-align: left;
+  vertical-align: top;
+  margin: 0;
+  margin-bottom: 20px;
+  height: 350px;
+}
+
+.line {
+  background: url(../images/album-03-300x300.jpg) no-repeat left bottom;
+  background-size: 260px 260px;
+}
+
+.social-network {
+  height: 50px;
+}
 .social-network li {
   padding: 15;
   display: inline-block;
 }
+
 .fa {
   color: white;
 }
+
+.copyright {
+  color: white;
+  text-transform: uppercase;
+}
+/* END FOOTER */
