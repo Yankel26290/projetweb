@@ -22,18 +22,13 @@ a {
 
 /* GENERAL */
 
-.container {
-
-  margin: auto;
-  max-width: 1024px;
-}
-
 hr {
   /*margin: 0;*/
   margin: auto;
   width: 100%;
   border-color: white;
 }
+
 /* END GENERAL */
 
 /* HEADER */
