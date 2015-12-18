@@ -1,8 +1,20 @@
+html {
+  box-sizing:
+}
+
 body {
-  background-color: black;
+  background-image: black;
+  /*background: url(../images/background.jpg) no-repeat;*/
+  background: url(../images/background.jpg) no-repeat 0 0;
+  /*background-size: cover;*/
+  background-attachment: scroll;
+  background-size: 100% 1024px;
   font-family: 'Open Sans', sans-serif;
 }
 
+img {
+  border: 0;
+}
 
 a {
   text-decoration: none;
@@ -11,7 +23,7 @@ a {
 /* GENERAL */
 
 .container {
-  background: url(../images/background.jpg) no-repeat 0 0;
+
   margin: auto;
   max-width: 1024px;
 }
@@ -84,7 +96,7 @@ li.active a{
 /* CONTENT */
 .content {
   border: 1px solid green;
-  height: 100px;
+  height: 700px;
 }
 /* END CONTENT */
 
@@ -100,6 +112,16 @@ footer {
 footer h2 {
   text-transform: uppercase;
   font-size: 1em;
+}
+
+footer h3 {
+  font-size: 0.8em;
+  margin-bottom: 0;
+}
+
+footer time {
+  text-transform: uppercase;
+  color: #9c9c9c;
 }
 
 .about, .line, .post {
@@ -121,6 +143,10 @@ footer h2 {
 .line {
   background: url(../images/album-03-300x300.jpg) no-repeat left bottom;
   background-size: 240px 240px;
+}
+
+article {
+  margin-bottom: 20px;
 }
 
 .social-network {
