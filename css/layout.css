@@ -1,5 +1,4 @@
 body {
-  background-color: black;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -9,17 +8,14 @@ a {
 }
 
 /* GENERAL */
-
 .container {
   background: url(../images/background.jpg) no-repeat 0 0;
   background-size: cover;
   background-attachment: fixed;
   background-position:center -300px;
-  /*max-width: 1024px;*/
 }
 
 hr {
-  /*margin: 0;*/
   margin: auto;
   max-width: 1024px;
   border-color: #333;
@@ -30,7 +26,6 @@ hr {
 /* HEADER */
 
 .header {
-  /*border: 1px solid green;*/
 }
 
 nav {
@@ -105,7 +100,6 @@ footer h2 {
 }
 
 .about, .line, .post {
-  /*border: 1px solid green;*/
   display: inline-block;
   width: 30%;
   color: white;
