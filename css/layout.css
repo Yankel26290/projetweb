@@ -14,7 +14,7 @@ a {
   background: url(../images/background.jpg) no-repeat 0 0;
   background-size: cover;
   background-attachment: fixed;
-  margin: auto;
+  background-position:center -300px;
   /*max-width: 1024px;*/
 }
 
@@ -30,7 +30,7 @@ hr {
 /* HEADER */
 
 .header {
-  border: 1px solid green;
+  /*border: 1px solid green;*/
 }
 
 nav {
@@ -94,10 +94,8 @@ li.active a{
 /* FOOTER */
 
 footer {
-  /*border-top: 1px solid #333;
-  border-bottom: 1px solid #333;*/
+  max-width: 1024px;
   text-align: center;
-  /*width: 800px;*/
   margin: auto;
 }
 
