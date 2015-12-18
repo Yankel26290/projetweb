@@ -15,7 +15,7 @@ a {
   background-size: cover;
   background-attachment: fixed;
   margin: auto;
-  /*max-width: 1024px;*/
+  max-width: 1024px;
 }
 
 hr {
@@ -30,7 +30,7 @@ hr {
 /* HEADER */
 
 .header {
-  border: 1px solid green;
+  /*border: 1px solid green;*/
 }
 
 nav {
@@ -86,8 +86,7 @@ li.active a{
 
 /* CONTENT */
 .content {
-  border: 1px solid green;
-  height: 100px;
+  /*border: 1px solid green;*/
   max-width: 1170px;
 }
 /* END CONTENT */
