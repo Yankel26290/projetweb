@@ -24,7 +24,12 @@ hr {
   max-width: 1100px;
   border-color: #333;
 }
-
+h1 h2{
+  text-transform: uppercase;
+}
+h2{
+  font-size: 3em;
+}
 /* END GENERAL */
 
 /* HEADER */
