@@ -1,5 +1,5 @@
 .biographie{
   text-align: justify;
-  width:auto;
+  max-width: 800px;
   margin: auto;
 }
