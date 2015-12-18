@@ -12,8 +12,10 @@ a {
 
 .container {
   background: url(../images/background.jpg) no-repeat 0 0;
+  background-size: cover;
+  background-attachment: fixed;
   margin: auto;
-  max-width: 1024px;
+  /*max-width: 1024px;*/
 }
 
 hr {
@@ -22,6 +24,7 @@ hr {
   width: 100%;
   border-color: white;
 }
+
 /* END GENERAL */
 
 /* HEADER */
