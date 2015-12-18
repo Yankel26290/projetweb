@@ -57,7 +57,7 @@
 
     </div>
     <!-- END CONTENT -->
-
+</div>
     <!-- FOOTER -->
     <footer>
 
@@ -80,6 +80,18 @@
       <!-- POST -->
       <div class="post">
         <h2>Recent posts</h2>
+          <article>
+            <h3>Welcome to our redesigned website</h3>
+            <time datetime="2015-04-01">April 1, 2015</time>
+          </article>
+          <article>
+            <h3>New tour dates posted</h3>
+            <time datetime="2014-12-16">December 16, 2014</time>
+          </article>
+          <article>
+            <h3>History of Popular Music</h3>
+            <time datetime="2014-12-15">December 15, 2014</time>
+          </article>
       </div>
       <!-- END POST -->
 
@@ -109,8 +121,31 @@
       </footer>
       <!-- END FOOTER -->
 
- </div>
+
  <!-- END CONTAINER -->
 
+  <!-- SCRIPT -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+      $(window).scroll(function ()
+      {
+        // alert('SCROLL '+$(this).scrollTop())
+        var END_OF_BACKGROUND = 500;
+
+        if ($(this).scrollTop() > END_OF_BACKGROUND)
+        {
+          var diff = $(document).scrollTop() - END_OF_BACKGROUND;
+          $(document.body).css('background-position', '0 '+diff+'px');
+          // alert('ELE '+$(document).scrollTop());
+
+        }
+        else
+          {
+            $(document.body).css('background-position', '0 0');
+          }
+      });
+
+  </script>
+  <!-- END SCRIPT -->
 </body>
 </html>
