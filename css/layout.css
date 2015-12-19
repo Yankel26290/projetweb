@@ -1,5 +1,9 @@
 body {
-  background-color: black;
+  background: url(../images/background.jpg) no-repeat 0 0;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: auto;
+  /*max-width: 1024px;*/
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -11,11 +15,7 @@ a {
 /* GENERAL */
 
 .container {
-  background: url(../images/background.jpg) no-repeat 0 0;
-  background-size: cover;
-  background-attachment: fixed;
-  margin: auto;
-  /*max-width: 1024px;*/
+
 }
 
 hr {
