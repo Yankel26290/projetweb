@@ -1,12 +1,25 @@
+html {
+  box-sizing:
+}
+
 body {
   background: url(../images/background.jpg) no-repeat 0 0;
   background-size: cover;
   background-attachment: fixed;
   margin: auto;
   /*max-width: 1024px;*/
+  background-image: black;
+  /*background: url(../images/background.jpg) no-repeat;*/
+  background: url(../images/background.jpg) no-repeat 0 0;
+  /*background-size: cover;*/
+  background-attachment: scroll;
+  background-size: 100% 1024px;
   font-family: 'Open Sans', sans-serif;
 }
 
+img {
+  border: 0;
+}
 
 a {
   text-decoration: none;
@@ -15,7 +28,11 @@ a {
 /* GENERAL */
 
 .container {
-
+  background: url(../images/background.jpg) no-repeat 0 0;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: auto;
+  max-width: 1024px;
 }
 
 hr {
@@ -86,8 +103,13 @@ li.active a{
 
 /* CONTENT */
 .content {
+<<<<<<< HEAD
+  /*border: 1px solid green;*/
+  max-width: 1170px;
+=======
   border: 1px solid green;
-  height: 100px;
+  height: 700px;
+>>>>>>> 4ab9e2eb65af9861d5ef929527d086466d53a2a6
 }
 /* END CONTENT */
 
@@ -103,6 +125,16 @@ footer {
 footer h2 {
   text-transform: uppercase;
   font-size: 1em;
+}
+
+footer h3 {
+  font-size: 0.8em;
+  margin-bottom: 0;
+}
+
+footer time {
+  text-transform: uppercase;
+  color: #9c9c9c;
 }
 
 .about, .line, .post {
@@ -124,6 +156,10 @@ footer h2 {
 .line {
   background: url(../images/album-03-300x300.jpg) no-repeat left bottom;
   background-size: 240px 240px;
+}
+
+article {
+  margin-bottom: 20px;
 }
 
 .social-network {

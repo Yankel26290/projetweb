@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Homepage</title>
+  <title>Tour</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
@@ -11,6 +11,7 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="lib/normalize.css">
   <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/tour.css">
 </head>
 <body>
 
@@ -22,12 +23,12 @@
       <!-- NAVIGATION -->
       <nav class="navigation" role="navigation">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="bio.html">Bio</a></li>
           <li><a href="photos.html">Photos</a></li>
           <li><a href="music.html">Music</a></li>
           <li><a href="news.html">News</a></li>
-          <li><a href="tour.html">Tour</a></li>
+          <li class="active"><a href="tour.html">Tour</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -35,8 +36,8 @@
 
       <!-- TITLE OF CURRENT PAGE -->
       <div class="title">
-        <h1>Projet Audio</h1>
-        <h2>Subtitle...</h2>
+        <h1>Obsidian</h1>
+        <h2>Gigs</h2>
       </div>
       <!-- END TITLE OF CURRENT PAGE -->
 
@@ -46,18 +47,68 @@
     <!-- CONTENT -->
     <div class="content">
 
-      <!-- VIDEOS -->
-      <div class="video">
-        <h2>Videos</h2>
-      </div>
-      <!-- END VIDEO -->
-
       <!-- UPCOMING GIGS -->
+        <p>Support live music and show appreciation for your favorite artist by attending a concert. You'll enjoy the experience.</p>
+
+
+        <table>
+          <tbody>
+          <tr>
+            <td class="date"><span class="month">Sep</span> <span class="day">14</span></td>
+            <td class="town">Nashville, TN</td>
+            <td class="place">The Bluebird Cafe</td>
+          </tr>
+          <tr>
+            <td class="date"><span class="month">Sep</span> <span class="day">16</span></td>
+            <td class="town">Seattle, WA</td>
+            <td class="place">Tractor Tavern</td>
+          </tr>
+          <tr>
+            <td class="date"><span class="month">Sep</span> <span class="day">17</span></td>
+            <td class="town">Alexandria, VA</td>
+            <td class="place">The Birchmere</td>
+          </tr>
+          <tr>
+            <td class="date"><span class="month">Sep</span> <span class="day">25</span></td>
+            <td class="town">Washington, DC</td>
+            <td class="place">The Hamilton</td>
+          </tr>
+          <tr>
+            <td class="date"><span class="month">Oct</span> <span class="day">30</span></td>
+            <td class="town">Chipping Ongar, Essex</td>
+            <td class="place">Zinc Arts Centre</td>
+          </tr>
+          <tr>
+            <td class="date"><span class="month">Nov</span> <span class="day">09</span></td>
+            <td class="town">Austin, TX</td>
+            <td class="place">ACL Live at The Moody Theater</td>
+          </tr>
+          <tr>
+            <td class="date"><span class="month">Mar</span> <span class="day">19</span></td>
+            <td class="town">Austin, TX</td>
+            <td class="place">A gig title</td>
+          </tr>
+          <tr>
+            <td class="date"><span class="month">Apr</span> <span class="day">02</span></td>
+            <td class="town">San Francisco, CA</td>
+            <td class="place">The Fillmore</td>
+          </tr>
+          <tr>
+            <td class="date"><span class="month">Jul</span> <span class="day">08</span></td>
+            <td class="town">Denver, CO</td>
+            <td class="place">The soiled dove underground</td>
+          </tr>
+          </tbody>
+        </table>
+
       <!-- END UPCOMING GIGS -->
 
     </div>
     <!-- END CONTENT -->
-</div>
+
+
+
+
     <!-- FOOTER -->
     <footer>
 
@@ -80,18 +131,6 @@
       <!-- POST -->
       <div class="post">
         <h2>Recent posts</h2>
-          <article>
-            <h3>Welcome to our redesigned website</h3>
-            <time datetime="2015-04-01">April 1, 2015</time>
-          </article>
-          <article>
-            <h3>New tour dates posted</h3>
-            <time datetime="2014-12-16">December 16, 2014</time>
-          </article>
-          <article>
-            <h3>History of Popular Music</h3>
-            <time datetime="2014-12-15">December 15, 2014</time>
-          </article>
       </div>
       <!-- END POST -->
 
@@ -121,31 +160,5 @@
       </footer>
       <!-- END FOOTER -->
 
-
- <!-- END CONTAINER -->
-
-  <!-- SCRIPT -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script>
-      $(window).scroll(function ()
-      {
-        // alert('SCROLL '+$(this).scrollTop())
-        var END_OF_BACKGROUND = 500;
-
-        if ($(this).scrollTop() > END_OF_BACKGROUND)
-        {
-          var diff = $(document).scrollTop() - END_OF_BACKGROUND;
-          $(document.body).css('background-position', '0 '+diff+'px');
-          // alert('ELE '+$(document).scrollTop());
-
-        }
-        else
-          {
-            $(document.body).css('background-position', '0 0');
-          }
-      });
-
-  </script>
-  <!-- END SCRIPT -->
 </body>
 </html>

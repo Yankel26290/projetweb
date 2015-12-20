@@ -11,6 +11,7 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="lib/normalize.css">
   <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/photos.css">
 </head>
 <body>
 
@@ -22,9 +23,9 @@
       <!-- NAVIGATION -->
       <nav class="navigation" role="navigation">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="bio.html">Bio</a></li>
-          <li><a href="photos.html">Photos</a></li>
+          <li class="active"><a href="photos.html">Photos</a></li>
           <li><a href="music.html">Music</a></li>
           <li><a href="news.html">News</a></li>
           <li><a href="tour.html">Tour</a></li>
@@ -36,7 +37,7 @@
       <!-- TITLE OF CURRENT PAGE -->
       <div class="title">
         <h1>Projet Audio</h1>
-        <h2>Subtitle...</h2>
+        <h2>Photos</h2>
       </div>
       <!-- END TITLE OF CURRENT PAGE -->
 
@@ -45,19 +46,38 @@
 
     <!-- CONTENT -->
     <div class="content">
+      <!-- PHOTOS -->
+      <div class="gallery">
+        <div class="line1">
+          <img src="../images/gallery-09.jpg" alt="">
+          <img src="../images/gallery-04.jpg" alt="">
+          <img src="../images/gallery-05.jpg" alt="">
+        </div>
+        <div>
+          <img src="../images/gallery-08.jpg" alt="">
+          <img src="../images/gallery-07.jpg" alt="">
+          <img src="../images/gallery-06.jpg" alt="">
+        </div>
 
-      <!-- VIDEOS -->
-      <div class="video">
-        <h2>Videos</h2>
+        <div>
+          <img src="../images/gallery-03.jpg" alt="">
+          <img src="../images/gallery-01.jpg" alt="">
+          <img src="../images/gallery-02.jpg" alt="">
+          <img src="../images/gallery-10.jpg" alt="">
+        </div>
+
       </div>
-      <!-- END VIDEO -->
+      <!-- END PHOTOS -->
 
       <!-- UPCOMING GIGS -->
       <!-- END UPCOMING GIGS -->
 
     </div>
     <!-- END CONTENT -->
-</div>
+
+  </div>
+  <!-- END CONTAINER -->
+
     <!-- FOOTER -->
     <footer>
 
@@ -80,18 +100,6 @@
       <!-- POST -->
       <div class="post">
         <h2>Recent posts</h2>
-          <article>
-            <h3>Welcome to our redesigned website</h3>
-            <time datetime="2015-04-01">April 1, 2015</time>
-          </article>
-          <article>
-            <h3>New tour dates posted</h3>
-            <time datetime="2014-12-16">December 16, 2014</time>
-          </article>
-          <article>
-            <h3>History of Popular Music</h3>
-            <time datetime="2014-12-15">December 15, 2014</time>
-          </article>
       </div>
       <!-- END POST -->
 
@@ -121,31 +129,5 @@
       </footer>
       <!-- END FOOTER -->
 
-
- <!-- END CONTAINER -->
-
-  <!-- SCRIPT -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script>
-      $(window).scroll(function ()
-      {
-        // alert('SCROLL '+$(this).scrollTop())
-        var END_OF_BACKGROUND = 500;
-
-        if ($(this).scrollTop() > END_OF_BACKGROUND)
-        {
-          var diff = $(document).scrollTop() - END_OF_BACKGROUND;
-          $(document.body).css('background-position', '0 '+diff+'px');
-          // alert('ELE '+$(document).scrollTop());
-
-        }
-        else
-          {
-            $(document.body).css('background-position', '0 0');
-          }
-      });
-
-  </script>
-  <!-- END SCRIPT -->
 </body>
 </html>
