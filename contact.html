@@ -12,6 +12,7 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="lib/normalize.css">
   <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
@@ -25,12 +26,12 @@
       <nav class="navigation" role="navigation">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="bio.html">Bio</a></li>
-          <li><a href="photos.html">Photos</a></li>
-          <li><a href="music.html">Music</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="tour.html">Tour</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="">Bio</a></li>
+          <li><a href="">Photos</a></li>
+          <li><a href="">Music</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">Tour</a></li>
+          <li><a href="">Contact</a></li>
         </ul>
       </nav>
       <!-- END NAVIGATION -->
@@ -38,32 +39,67 @@
       <!-- TITLE OF CURRENT PAGE -->
       <div class="title">
         <h1>Projet Audio</h1>
-        <h2>Subtitle...</h2>
       </div>
       <!-- END TITLE OF CURRENT PAGE -->
-      <hr>
+
     </div>
   </div>
   <!-- END HEADER -->
 
   <!-- CONTENT -->
-  <div class="content">
-
+  <div class="content container">
     <!-- VIDEOS -->
-    <div class="video">
-      <h2>Videos</h2>
+    <div class="contact">
+      <h2>Contact</h2>
+      <hr>
+      <section class="contact-form">
+        <label for="name"><span>Name</span> (required)</label>
+        <input type="text" name="name"></input>
+        <label for="email"><span>Email</span> (required)</label>
+        <input type="email" name="email"></input>
+        <label for="website"><span>Website</span></label>
+        <input type="text" name="website"></input>
+        <label for="comment"><span>Comment</span> (required)</label>
+        <textarea name="comment" rows="8" cols="40"></textarea>
+        <button type="submit">Submit <span class="fa fa-angle-double-right"></span></button>
+      </section>
+      <aside class="search">
+        <input type="text" name="search" placeholder="Search..."></input>
+        <h3>Latest news</h3>
+        <article class="">
+          <h4>Welcome to our redesigned website</h4>
+          <p>
+            Props to AudioTheme for providing the killer Obsidian WordPress theme. Feel free to poke around, str,...
+          </p>
+          <time datetime="2015-04-01">April 1, 2015</time>.
+        </article>
+        <article class="">
+          <h4>Welcome to our redesigned website</h4>
+          <p>
+            Props to AudioTheme for providing the killer Obsidian WordPress theme. Feel free to poke around, str,...
+          </p>
+          <time datetime="2015-04-01">April 1, 2015</time>.
+        </article>
+      </aside>
     </div>
     <!-- END VIDEO -->
 
     <!-- UPCOMING GIGS -->
     <!-- END UPCOMING GIGS -->
   </div>
+
+
+
+
+
+
   <!-- END CONTENT -->
 
   <!-- FOOTER -->
   <footer>
     <div class="container">
 
+      <hr>
       <!-- ABOUT OTHERS -->
       <div class="about">
         <h2>About obsedian</h2>
@@ -112,24 +148,6 @@
   </footer>
   <!-- END FOOTER -->
 
-  <!-- SCRIPT -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script>
-    $(window).scroll(function() {
-      // alert('SCROLL '+$(this).scrollTop())
-      var END_OF_BACKGROUND = 500;
-
-      if ($(this).scrollTop() > END_OF_BACKGROUND) {
-        var diff = $(document).scrollTop() - END_OF_BACKGROUND;
-        $(document.body).css('background-position', '0 ' + diff + 'px');
-        // alert('ELE '+$(document).scrollTop());
-
-      } else {
-        $(document.body).css('background-position', '0 0');
-      }
-    });
-  </script>
-  <!-- END SCRIPT -->
 </body>
 
 </html>
