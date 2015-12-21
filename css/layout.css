@@ -1,5 +1,8 @@
 html {
-  box-sizing:
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
 }
 
 body {
@@ -34,7 +37,7 @@ hr {
   /*margin: 0;*/
   margin: auto;
   width: 100%;
-  border-color: white;
+  border-color: #333;
 }
 
 /* END GENERAL */
@@ -98,13 +101,8 @@ li.active a{
 
 /* CONTENT */
 .content {
-<<<<<<< HEAD
-  /*border: 1px solid green;*/
-  max-width: 1170px;
-=======
-  border: 1px solid green;
-  height: 700px;
->>>>>>> 4ab9e2eb65af9861d5ef929527d086466d53a2a6
+  max-width: 1100px;
+  width: 100%;
 }
 /* END CONTENT */
 

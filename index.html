@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <title>Homepage</title>
@@ -12,6 +13,7 @@
   <link rel="stylesheet" href="lib/normalize.css">
   <link rel="stylesheet" href="css/layout.css">
 </head>
+
 <body>
 
   <div class="container">
@@ -57,95 +59,91 @@
 
     </div>
     <!-- END CONTENT -->
-</div>
-    <!-- FOOTER -->
-    <footer>
+  </div>
+  <!-- FOOTER -->
+  <footer>
 
-      <!-- ABOUT OTHERS -->
-      <div class="about">
-        <h2>About obsedian</h2>
-        <p>
-          The Obsidian theme, like the naturally occurring volcanic glass of the same name, possesses an inherent allure that's stylish in appearance and pratical in purpose.
-          With distinctive background options and various customization possibilities, Obsedian makes it easy to create the ultimate hub for your online identity.
-        </p>
-      </div>
-      <!-- END ABOUT OTHERS -->
+    <!-- ABOUT OTHERS -->
+    <div class="about">
+      <h2>About obsedian</h2>
+      <p>
+        The Obsidian theme, like the naturally occurring volcanic glass of the same name, possesses an inherent allure that's stylish in appearance and pratical in purpose. With distinctive background options and various customization possibilities, Obsedian
+        makes it easy to create the ultimate hub for your online identity.
+      </p>
+    </div>
+    <!-- END ABOUT OTHERS -->
 
-      <!-- OMITTED LINE -->
-      <div class="line">
-        <h2>Vivienne's omitted line</h2>
-      </div>
-      <!-- END OMITTED LINE -->
+    <!-- OMITTED LINE -->
+    <div class="line">
+      <h2>Vivienne's omitted line</h2>
+    </div>
+    <!-- END OMITTED LINE -->
 
-      <!-- POST -->
-      <div class="post">
-        <h2>Recent posts</h2>
-          <article>
-            <h3>Welcome to our redesigned website</h3>
-            <time datetime="2015-04-01">April 1, 2015</time>
-          </article>
-          <article>
-            <h3>New tour dates posted</h3>
-            <time datetime="2014-12-16">December 16, 2014</time>
-          </article>
-          <article>
-            <h3>History of Popular Music</h3>
-            <time datetime="2014-12-15">December 15, 2014</time>
-          </article>
-      </div>
-      <!-- END POST -->
+    <!-- POST -->
+    <div class="post">
+      <h2>Recent posts</h2>
+      <article>
+        <h3>Welcome to our redesigned website</h3>
+        <time datetime="2015-04-01">April 1, 2015</time>
+      </article>
+      <article>
+        <h3>New tour dates posted</h3>
+        <time datetime="2014-12-16">December 16, 2014</time>
+      </article>
+      <article>
+        <h3>History of Popular Music</h3>
+        <time datetime="2014-12-15">December 15, 2014</time>
+      </article>
+    </div>
+    <!-- END POST -->
 
-      <hr>
+    <hr>
 
-      <!-- SOCIAL -->
-      <nav class="social-network">
-        <ul>
-          <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
-          <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
-          <li><a href="#"><i class="fa fa-soundcloud"></i></a></li>
-          <li><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fa fa-amazon"></i></a></li>
-          <li><a href="#"><i class="fa fa-apple"></i></a></li>
-          <li><a href="#"><i class="fa fa-apple"></i></a></li>
-        </ul>
-      </nav>
-      <!-- END SOCIAL -->
-
-
-      <!-- COPYRIGHT -->
-      <p class="copyright">obsidian music theme by audiotheme.</p>
-      <!-- END COPYRIGHT -->
-
-      </footer>
-      <!-- END FOOTER -->
+    <!-- SOCIAL -->
+    <nav class="social-network">
+      <ul>
+        <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+        <li><a href="#"><i class="fa fa-soundcloud"></i></a></li>
+        <li><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-amazon"></i></a></li>
+        <li><a href="#"><i class="fa fa-apple"></i></a></li>
+        <li><a href="#"><i class="fa fa-apple"></i></a></li>
+      </ul>
+    </nav>
+    <!-- END SOCIAL -->
 
 
- <!-- END CONTAINER -->
+    <!-- COPYRIGHT -->
+    <p class="copyright">obsidian music theme by audiotheme.</p>
+    <!-- END COPYRIGHT -->
+
+  </footer>
+  <!-- END FOOTER -->
+
+
+  <!-- END CONTAINER -->
 
   <!-- SCRIPT -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script>
-      $(window).scroll(function ()
-      {
-        // alert('SCROLL '+$(this).scrollTop())
-        var END_OF_BACKGROUND = 500;
+    $(window).scroll(function() {
+      // alert('SCROLL '+$(this).scrollTop())
+      var END_OF_BACKGROUND = 500;
 
-        if ($(this).scrollTop() > END_OF_BACKGROUND)
-        {
-          var diff = $(document).scrollTop() - END_OF_BACKGROUND;
-          $(document.body).css('background-position', '0 '+diff+'px');
-          // alert('ELE '+$(document).scrollTop());
+      if ($(this).scrollTop() > END_OF_BACKGROUND) {
+        var diff = $(document).scrollTop() - END_OF_BACKGROUND;
+        $(document.body).css('background-position', '0 ' + diff + 'px');
+        // alert('ELE '+$(document).scrollTop());
 
-        }
-        else
-          {
-            $(document.body).css('background-position', '0 0');
-          }
-      });
-
+      } else {
+        $(document.body).css('background-position', '0 0');
+      }
+    });
   </script>
   <!-- END SCRIPT -->
 </body>
+
 </html>
