@@ -1,18 +1,20 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
-
-
 a {
   text-decoration: none;
 }
 
 /* GENERAL */
-.container {
 
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+  /*text-align: center;*/
 }
-.fond{
-    object-fit: cover;
+.fond {
+  object-fit: cover;
   filter: brightness(50%);
   position: fixed;
   width: 100%;
@@ -20,65 +22,55 @@ a {
   z-index: -1;
 }
 hr {
-  margin: auto;
-  max-width: 1100px;
+  width: 100%;
   border-color: #333;
 }
-h1 h2{
+h1 h2 {
   text-transform: uppercase;
 }
-h2{
+h2 {
   font-size: 3em;
 }
+
 /* END GENERAL */
+
 
 /* HEADER */
 
-.header {
-}
-
+.header {}
 nav {
   margin: auto;
   text-align: center;
 }
-
 nav ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-
-li.active a{
+li.active a {
   color: white;
 }
-
 .navigation li {
   display: inline-block;
   padding: 100px 35px;
   text-transform: uppercase;
 }
-
 .navigation a {
   color: #9c9c9c;
 }
-
 .navigation a:hover {
   color: white;
 }
-
-.title
-{
+.title {
   text-align: center;
   text-transform: uppercase;
 }
-
 .title h1 {
   font-size: 3em;
   font-family: 'Open Sans';
   font-weight: lighter;
   color: #fff;
 }
-
 .title h2 {
   font-size: 1.2em;
   font-family: 'Open Sans';
@@ -88,26 +80,24 @@ li.active a{
 
 /* END HEADER */
 
+
 /* CONTENT */
+
 .content {
   border: 1px solid green;
   height: 100px;
 }
+
 /* END CONTENT */
+
 
 /* FOOTER */
 
-footer {
-  max-width: 1100px;
-  text-align: center;
-  margin: auto;
-}
-
+footer {}
 footer h2 {
   text-transform: uppercase;
   font-size: 1em;
 }
-
 .about, .line, .post {
   display: inline-block;
   width: 30%;
@@ -119,7 +109,6 @@ footer h2 {
   padding-right: 20px;
   height: 300px;
 }
-
 .about p {
   color: #333;
   font-size: 0.8em;
@@ -128,22 +117,19 @@ footer h2 {
   background: url(../images/album-03-300x300.jpg) no-repeat left bottom;
   background-size: 240px 240px;
 }
-
 .social-network {
   height: 50px;
 }
-
 .social-network li {
   padding: 15;
   display: inline-block;
 }
-
 .fa {
   color: white;
 }
-
 .copyright {
   color: white;
   text-transform: uppercase;
 }
+
 /* END FOOTER */
