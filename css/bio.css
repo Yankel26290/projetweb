@@ -1,5 +1,6 @@
 .biographie{
+  color: #c5c5c5;
   text-align: justify;
-  width:auto;
-  margin: auto;
+  max-width: 800px;
+  margin: 50px auto;
 }

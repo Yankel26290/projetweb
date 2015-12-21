@@ -8,7 +8,6 @@ html {
 body {
   background-image: black;
   /*background: url(../images/background.jpg) no-repeat;*/
-  background: url(../images/background.jpg) no-repeat 0 0;
   /*background-size: cover;*/
   background-attachment: scroll;
   background-size: 100% 1024px;
@@ -24,28 +23,32 @@ a {
 }
 
 /* GENERAL */
-
 .container {
-  background: url(../images/background.jpg) no-repeat 0 0;
-  background-size: cover;
-  background-attachment: fixed;
-  margin: auto;
-  max-width: 1024px;
 }
 
-hr {
-  /*margin: 0;*/
-  margin: auto;
+}
+.fond{
+    object-fit: cover;
+  filter: brightness(50%);
+  position: fixed;
   width: 100%;
+  margin-top: -300px;
+  z-index: -1;
+}
+hr {
   border-color: #333;
 }
-
+h1 h2{
+  text-transform: uppercase;
+}
+h2{
+  font-size: 3em;
+}
 /* END GENERAL */
 
 /* HEADER */
 
 .header {
-  /*border: 1px solid green;*/
 }
 
 nav {
@@ -109,9 +112,8 @@ li.active a{
 /* FOOTER */
 
 footer {
-  /*border: 1px solid green;*/
+  max-width: 1100px;
   text-align: center;
-  width: 800px;
   margin: auto;
 }
 
@@ -131,7 +133,6 @@ footer time {
 }
 
 .about, .line, .post {
-  /*border: 1px solid green;*/
   display: inline-block;
   width: 30%;
   color: white;
@@ -144,6 +145,7 @@ footer time {
 }
 
 .about p {
+  color: #333;
   font-size: 0.8em;
 }
 .line {
