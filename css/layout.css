@@ -53,6 +53,9 @@ h2 {
   font-size: 3em;
 }
 
+h4 {
+  margin-bottom: 0px;
+}
 /* END GENERAL */
 
 
@@ -141,17 +144,24 @@ footer time {
   padding-right: 20px;
   height: 300px;
 }
+
 .about p {
-  color: #333;
-  font-size: 0.8em;
+  color: white;
+  font-size: 0.9em;
 }
 .line {
   background: url(../images/album-03-300x300.jpg) no-repeat left bottom;
   background-size: 240px 240px;
 }
 
-article {
-  margin-bottom: 20px;
+article p {
+  font-size: 0.9em;
+}
+
+time {
+  text-transform: uppercase;
+  color: grey;
+  font-size: 0.8em;
 }
 
 .social-network {
